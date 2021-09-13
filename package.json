@@ -1,16 +1,20 @@
 {
   "name": "nestjs-cqrs-static-type-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Static types generator for @nestjs/cqrs handlers",
   "main": "build/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "bin": {
     "generate-types": "./build/index.js"
   },
   "author": "Sonyahon <volkov030@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/SonyaHon/nestjs-cqrs-static-type-generator"
+  },
   "dependencies": {
     "command-line-args": "^5.2.0",
     "command-line-usage": "^6.1.1",
@@ -21,5 +25,8 @@
     "@types/command-line-args": "^5.2.0",
     "@types/command-line-usage": "^5.0.2",
     "@types/node": "^16.9.1"
+  },
+  "peerDependencies": {
+    "@nestjs/cqrs": "^8.0.0"
   }
 }
