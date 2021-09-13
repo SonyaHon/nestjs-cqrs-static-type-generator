@@ -1,6 +1,6 @@
 {
   "name": "nestjs-cqrs-static-type-generator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Static types generator for @nestjs/cqrs handlers",
   "main": "build/index.js",
   "scripts": {
@@ -28,5 +28,11 @@
   },
   "peerDependencies": {
     "@nestjs/cqrs": "^8.0.0"
-  }
+  },
+  "keywords": [
+    "nestjs",
+    "cqrs",
+    "generator",
+    "static type"
+  ]
 }
